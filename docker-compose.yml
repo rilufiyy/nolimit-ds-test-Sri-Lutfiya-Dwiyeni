@@ -1,0 +1,59 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: meetrecall-backend:latest
+    container_name: meetrecall-backend
+    ports:
+      - "8080:8000"
+    volumes:
+      - meetrecall-data:/app/data
+      - meetrecall-uploads:/app/uploads
+      - meetrecall-hf-cache:/root/.cache/huggingface
+    env_file:
+      - ./backend/.env
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://127.0.0.1:8000/health || exit 1"]
+      interval: 20s
+      timeout: 10s
+      retries: 8
+      start_period: 180s
+    restart: unless-stopped
+    networks:
+      - meetrecall-net
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: meetrecall-frontend:latest
+    container_name: meetrecall-frontend
+    ports:
+      - "8502:8501"
+    environment:
+      BACKEND_URL: http://backend:8000
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - meetrecall-net
+
+volumes:
+  meetrecall-data:
+  meetrecall-uploads:
+  meetrecall-hf-cache:
+
+networks:
+  meetrecall-net:
+    driver: bridge
