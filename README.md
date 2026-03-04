@@ -312,23 +312,12 @@ MeetRecall/
 ![RAG Chatbot](documentations/RAG_Chatbot.png)
 
 ```
-
+```
 ### Topic Clustering — discovered topics
+![Topic Clustering](documentations/topic_clustering.png)
 
-**Algorithm:** KMeans, n_clusters=4
-
-| Cluster | Label | Speakers | Segments | Time Range |
-|---|---|---|---|---|
-| 0 | Authentication & Security Fixes | SPEAKER_01, SPEAKER_02 | 8 | 00:00 – 05:58 |
-| 1 | Sprint Planning & Velocity | SPEAKER_00, SPEAKER_02 | 6 | 06:10 – 08:45 |
-| 2 | Database & Infrastructure | SPEAKER_01, SPEAKER_03 | 5 | 09:00 – 10:30 |
-| 3 | QA Testing & Release Readiness | SPEAKER_00, SPEAKER_02, SPEAKER_03 | 7 | 10:45 – 12:00 |
+```
+```
 
 ### Sentiment Analysis — per speaker
-
-| Speaker | Positive | Neutral | Negative |
-|---|---|---|---|
-| SPEAKER_00 | 0.62 | 0.31 | 0.07 |
-| SPEAKER_01 | 0.45 | 0.42 | 0.13 |
-| SPEAKER_02 | 0.71 | 0.24 | 0.05 |
-| SPEAKER_03 | 0.38 | 0.48 | 0.14 |
+![Sentiment Analysis](documentations/sentiment_analysis.png)
