@@ -2,7 +2,7 @@
 
 # MeetRecall AI
 
-**Meeting intelligence platform** — automatic transcription, RAG chatbot, topic clustering, and per-speaker sentiment analysis.
+**Meeting intelligence platform** my own project improvement from my original project "MeetRecall AI" (https://github.com/rilufiyy/MeetRecall-AI) — automatic transcription, RAG chatbot, topic clustering, and per-speaker sentiment analysis.
 Built for the **NoLimit Indonesia Data Scientist Technical Test** (Option **C: RAG Chatbot** + Bonus: **Topic Clustering** + **Streamlit App**).
 
 ---
