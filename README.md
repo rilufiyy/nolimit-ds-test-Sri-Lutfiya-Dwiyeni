@@ -365,7 +365,7 @@ MeetRecall/
 
 ### RAG Chatbot — Q&A with Cited Sources
 Retrieval-augmented response generated from indexed meeting transcript chunks.
-![RAG Chatbot](documentations/RAG_Chatbot.png)
+![RAG Chatbot](documentations/more_interaction_chat.png)
 
 ### Topic Clustering — Discovered Topics
 Unsupervised clustering of meeting segments using semantic embeddings.
