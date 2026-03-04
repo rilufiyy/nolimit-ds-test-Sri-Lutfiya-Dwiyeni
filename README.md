@@ -363,17 +363,14 @@ MeetRecall/
 
 ## Sample Output
 
-### RAG Chatbot — Q&A with cited sources
+### RAG Chatbot — Q&A with Cited Sources
+Retrieval-augmented response generated from indexed meeting transcript chunks.
 ![RAG Chatbot](documentations/RAG_Chatbot.png)
 
-```
-```
-### Topic Clustering — discovered topics
+### Topic Clustering — Discovered Topics
+Unsupervised clustering of meeting segments using semantic embeddings.
 ![Topic Clustering](documentations/topic_clustering.png)
 
-```
-```
-### Sentiment Analysis — per speaker
+### Sentiment Analysis — Per Speaker
+Per-speaker sentiment classification derived from segmented dialogue.
 ![Sentiment Analysis](documentations/sentiment_analysis.png)
-
-```
