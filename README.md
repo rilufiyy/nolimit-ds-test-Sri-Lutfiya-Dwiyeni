@@ -34,7 +34,7 @@ Built for the **NoLimit Indonesia Data Scientist Technical Test** (Option **C: R
 
 ## NLP Pipeline
 
-See **[flowchart.png](flowchart.png)** for the full visual diagram (mandatory for technical test).
+See **[flowchart.png](Flowchart.pdf)** for the full visual diagram (mandatory for technical test).
 
 ```
 Audio / Video Input  (MP4 · MKV · MP3 · WAV · M4A · WEBM · OGG · FLAC)
