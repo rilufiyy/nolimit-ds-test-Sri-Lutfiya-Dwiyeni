@@ -106,9 +106,6 @@ Q&A Response
 ### Speaker Transcription Detail
 ![Speaker Transcription](documentations/detail_speaker_transcription.png)
 
-### Detail per Speaker
-![Detail Per Speaker](documentations/detail_per_speaker.png)
-
 ---
 
 ## NLP Analysis
@@ -121,6 +118,9 @@ Q&A Response
 
 ### Sentiment Analysis
 ![Sentiment Analysis](documentations/sentiment_analysis.png)
+
+### Detail per Speaker
+![Detail Per Speaker](documentations/detail_per_speaker.png)
 
 ---
 
