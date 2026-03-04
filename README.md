@@ -64,11 +64,11 @@ Speaker-labelled Transcript  [{speaker, start, end, text}]  →  JSON storage
         ▼                                      ▼
 sentence-transformers/                 Group segments by speaker
 paraphrase-multilingual-MiniLM-L12-v2         │
-  (384-dim L2-normalised embeddings)           ▼
+  (384-dim L2-normalised embeddings)          ▼
         │                          cardiffnlp/twitter-roberta-base-sentiment
    ┌────┴────────────────┐           (per-speaker batch inference)
    ▼                     ▼                     │
-FAISS IndexFlatIP    KMeans / HDBSCAN           ▼
+FAISS IndexFlatIP    KMeans / HDBSCAN          ▼
 (per-meeting index)  (segment clustering)  Speaker Sentiment
    │                     │              (positive / neutral / negative)
    ▼                     ▼
@@ -83,6 +83,57 @@ Qwen/Qwen2-0.5B-Instruct ▼
 Q&A Response
 (answer + keywords + action items + cited source segments)
 ```
+
+---
+## Application Interface
+
+### Main Interface
+![Main Interface](documentations/main_interface.png)
+
+### Upload Page
+![Upload](documentations/upload.png)
+
+### Processing Status
+![Processing Status](documentations/processing_status.png)
+
+---
+
+## Transcription & Speaker Analysis
+
+### Transcription Result
+![Transcription Result](documentations/transcription_result.png)
+
+### Speaker Transcription Detail
+![Speaker Transcription](documentations/detail_speaker_transcription.png)
+
+### Detail per Speaker
+![Detail Per Speaker](documentations/detail_per_speaker.png)
+
+---
+
+## NLP Analysis
+
+### Topic Clustering Overview
+![Topic Clustering](documentations/topic_clustering.png)
+
+### Topic Clustering Detail
+![Topic Clustering Detail](documentations/detail_each_topic_clustering.png)
+
+### Sentiment Analysis
+![Sentiment Analysis](documentations/sentiment_analysis.png)
+
+---
+
+## RAG Chatbot
+
+The system includes a Retrieval-Augmented Generation (RAG) chatbot that allows users to ask questions about meeting content.
+
+Example queries:
+- *"What decisions were made?"*
+- *"What did Speaker A discuss?"*
+- *"Summarize the meeting outcome."*
+
+![RAG Chatbot](documentations/RAG_Chatbot.png)
 
 ---
 
@@ -316,7 +367,6 @@ MeetRecall/
 ### Topic Clustering — discovered topics
 ![Topic Clustering](documentations/topic_clustering.png)
 
-```
 ```
 
 ### Sentiment Analysis — per speaker
