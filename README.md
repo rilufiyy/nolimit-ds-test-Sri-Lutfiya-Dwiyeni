@@ -1,9 +1,10 @@
 # nolimit-ds-test-Sri-Lutfiya-Dwiyeni
 
-# MeetRecall AI
+# MeetRecall AI Improvement
 
-**Meeting intelligence platform** my own project improvement from my original project "MeetRecall AI" (https://github.com/rilufiyy/MeetRecall-AI) — automatic transcription, RAG chatbot, topic clustering, and per-speaker sentiment analysis.
-Built for the **NoLimit Indonesia Data Scientist Technical Test** (Option **C: RAG Chatbot** + Bonus: **Topic Clustering** + **Streamlit App**).
+This project is an improved version of [MeetRecall AI](https://github.com/rilufiyy/MeetRecall-AI), 
+extended into a full Meeting Intelligence Platform with RAG chatbot, topic clustering, 
+and per-speaker sentiment analysis. Built for the NoLimit Indonesia Data Scientist Technical Test (Option C: RAG Chatbot + Bonus: Topic Clustering + Streamlit App).
 
 ---
 
