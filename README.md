@@ -21,7 +21,6 @@ Built for the NoLimit Indonesia Data Scientist Technical Test
 6. [API Reference](#api-reference)
 7. [Project Structure](#project-structure)
 8. [Sample Output](#sample-output)
-9. [Technical Test Checklist](#technical-test-checklist)
 
 ---
 
